@@ -1,0 +1,12 @@
+version: "3.7"
+services:
+  app:
+    build: .
+    ports:
+      - 3006:3000
+    networks:
+      - app
+networks:
+  app:
+volumes:
+  mongo:
